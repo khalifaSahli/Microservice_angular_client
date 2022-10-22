@@ -28,7 +28,11 @@ export class AuthService {
       tap((response: any) => {
         this._isLoggedIn$.next(true);
         localStorage.setItem('token', response.token);
-        this.router.navigate(['/dashboard']);
+        if(response.user.isAdmin==1)
+        this.router.navigate(['admin']);
+        else{
+          this.router.navigate(['user']);
+        }
       })
       
     );

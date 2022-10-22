@@ -12,9 +12,10 @@ export class LoginService {
   constructor(private http:HttpClient,) { }
 
 
-  Login_url=environment.url+'auth/'
+  Login_url=environment.url
   LoginApi(form:LoginRequest) {
-    return this.http.post(this.Login_url+'authenticate', form);
+    return this.http.post(this.Login_url+'signin', form);
+    
   }
 
 }
