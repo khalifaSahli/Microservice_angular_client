@@ -1,0 +1,16 @@
+{
+"/auth/*": {
+"target": "http://localhost:8081/auth/",
+"secure": false,
+"logLevel": "debug",
+"changeOrigin": true,
+"pathRewrite": {"^/api" : ""}
+},
+"/balade/*": {
+    "target": "http://localhost:8081/api/",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true,
+    "pathRewrite": {"^/api" : ""}
+    }
+}
