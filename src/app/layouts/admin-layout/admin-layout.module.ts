@@ -7,18 +7,23 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ChartsModule } from 'ng2-charts';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ToastrModule } from 'ngx-toastr';
+import { ListBaladeComponent } from './balade/list-balade/list-balade.component';
+import { AddBaladeComponent } from './balade/add-balade/add-balade.component';
 
 @NgModule({
   imports: [
     CommonModule,
     RouterModule.forChild(AdminLayoutRoutes),
     FormsModule,
+    ReactiveFormsModule,
     ChartsModule,
     NgbModule,
     ToastrModule.forRoot()
   ],
   declarations: [
     DashboardComponent,
+    ListBaladeComponent,
+    AddBaladeComponent,
   ]
 })
 

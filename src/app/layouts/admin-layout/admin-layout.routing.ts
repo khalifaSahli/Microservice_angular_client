@@ -1,4 +1,6 @@
 import { Routes } from '@angular/router';
+import { AddBaladeComponent } from './balade/add-balade/add-balade.component';
+import { ListBaladeComponent } from './balade/list-balade/list-balade.component';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
 
@@ -9,4 +11,6 @@ export const AdminLayoutRoutes: Routes = [
         pathMatch: 'full',
       }, 
     { path: 'dashboard',      component: DashboardComponent },
+    { path: 'list_balade',      component: ListBaladeComponent },
+    { path: 'add_balade',      component: AddBaladeComponent },
 ];
