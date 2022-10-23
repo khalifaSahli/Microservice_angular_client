@@ -30,7 +30,12 @@ const routes: Routes =[
       path: '',
       loadChildren: () => import('./layouts/admin-layout/admin-layout.module').then(x=>x.AdminLayoutModule),
       canActivate:[]
-  }]},
+  },
+  {
+    path: '',
+    loadChildren: () => import('./layouts/admin-layout/admin-layout.module').then(x=>x.AdminLayoutModule),
+    canActivate:[]
+} ]},
   {
     path: 'user',
     component: UsersComponent,

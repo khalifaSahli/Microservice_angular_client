@@ -10,7 +10,8 @@ import { LoadingComponent } from './all/loading/loading.component';
 import { NotfoundComponent } from './all/notfound/notfound.component';
 import { AuthService } from '../service/authService/auth.service';
 import { ClientNavbarComponent } from './front/navbar/client_navbar.component';
-
+import { ListReviewComponent } from '../layouts/admin-layout/review/list-review/list-review.component';
+import { AddReviewComponent } from '../layouts/admin-layout/review/add-review/add-review.component';
 @NgModule({
   imports: [
     CommonModule,
@@ -23,7 +24,9 @@ import { ClientNavbarComponent } from './front/navbar/client_navbar.component';
     SidebarComponent,
     LoadingComponent,
     NotfoundComponent,
-    ClientNavbarComponent
+    ClientNavbarComponent,
+    ListReviewComponent,
+    AddReviewComponent,
   ],
   exports: [
     FooterComponent,

@@ -5,5 +5,6 @@
 
 export const environment = {
   production: false,
-  url:"/api/"
+  url:"/api/", 
+   apiUrl: 'http://localhost:8083/Trotti/'
 };

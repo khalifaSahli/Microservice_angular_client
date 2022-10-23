@@ -1,0 +1,48 @@
+<div class="panel-header panel-header-sm">
+</div>
+<div class="main-content">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-header">
+          <h5 class="title">Add Review</h5>
+        </div>
+        <div class="card-body">
+          <form [formGroup]="editForm">
+            <div class="row">
+              <div class="col-md-5 pr-1">
+                <div class="form-group">
+                  <label>Titre </label>
+                  <input type="text" class="form-control"   formControlName="Titre" id="Titre"    >
+             
+                  <div class="err" *ngIf=" f.Titre.invalid &&(f.Titre.touched ||f.Titre.touched)">
+                      <div *ngIf="f.Titre.errors.required" class="text-danger">Titre is required
+                       </div>
+                 
+                </div>
+                </div>
+              </div>
+          
+             
+            </div>
+           
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label>Description</label>
+                  <textarea rows="4" cols="80" class="form-control" placeholder="Here can be your description" placeholder="Description"  formControlName="Description" id="Description"   ></textarea>
+             
+                  
+            </div>
+              </div>
+            </div>
+            <button [disabled]="editForm.invalid" type="submit" class="btn btn-success btn-lg" rippleEffect>
+                
+           </button>  
+          </form>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
